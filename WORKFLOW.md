@@ -24,7 +24,7 @@ GitHub Flow is a good choice because it is simple and works well for small teams
 
 **Fully removing the leaked secret from history:**
 
-`git rm --cached` and `.gitignore` only stop Git from tracking the file in future commits. The secret can still exist in older commits. To completely remove it, you would need tools like `git filter-repo` or BFG Repo-Cleaner and then force-push the changes. In a real situation, the leaked password or key should also be changed immediately.
+`git rm --cached` and `.gitignore` only stop Git from tracking the file in future commits. The secret can still exist in older commits. To completely remove it, you would need tools like `git filter-repo` and then force-push the changes. In a real situation, the leaked password or key should also be changed immediately.
 
 **Why rewriting history was OK in Task 2 but not on a teammate's pulled commit:**
 
